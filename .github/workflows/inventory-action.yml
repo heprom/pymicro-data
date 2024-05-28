@@ -1,24 +1,23 @@
 name: Update Inventory
 
 on: [push]
-
+permissions:
+  contents: write
 jobs:
   update-inventory:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: List versioned files
         run: git ls-files > inventory.txt
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
           git add inventory.txt
           git commit -m "Update inventory file"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
