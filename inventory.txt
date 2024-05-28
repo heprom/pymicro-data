@@ -1,4 +1,3 @@
-.github/workflows/inventory-action.yml
 2-6-2_30k00_c1_masked-labels.raw
 2-6-2_30k00_c1_masked-labels.raw.info
 CT10_PROPAG100.geof
@@ -25,6 +24,7 @@ cube_ref.geof
 ebsd_ti_beta_crack.osc
 example_microstructure.tar.gz
 grain1_112x112x121_uint8.raw
+inventory.txt
 m1_data.h5
 m1_data.xdmf
 m2_data.h5
