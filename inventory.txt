@@ -24,6 +24,7 @@ cube_ref.geof
 ebsd_ti_beta_crack.osc
 example_microstructure.tar.gz
 grain1_112x112x121_uint8.raw
+inventory.txt
 m1_data.h5
 m1_data.xdmf
 m2_data.h5
